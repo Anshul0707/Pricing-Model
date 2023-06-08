@@ -10,7 +10,7 @@ This API provides endpoints to retrieve pricing information for cards.
 
 ## Base URL
 
-The base URL for all API endpoints is: `https://api.example.com`
+The base URL for all API endpoints is: `http://localhost:8080`
 
 ## Authentication
 
@@ -30,13 +30,27 @@ Retrieves the pricing information for a card.
   - **Example Response Body**:
 
     ```
-    {
-      "id": 1234,
-      "name": "Card Name",
-      "price": 9.99
-    }
-    ```
-
+        {
+        "subscriptions": [
+            {
+                "type": "silver",
+                "description": "Students",
+                "offers": [
+                    {
+                        "quantity": 0,
+                        "description": "200+ Custom Icons",
+                        "active": true
+                    },
+                    {
+                        "quantity": 10,
+                        "description": "Custom Packs",
+                        "active": true
+                    }
+                ]
+            }
+        ]
+      }
+      
 - **Error Response**:
   - **Status Code**: 500 Internal Server Error
   - **Description**: This error response indicates that the server encountered an unexpected condition.
