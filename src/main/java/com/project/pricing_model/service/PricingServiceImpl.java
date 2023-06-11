@@ -29,12 +29,12 @@ public class PricingServiceImpl implements PricingService {
     @Override
     public Card getCard() {
         List<Offer> offers = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             offers.add(buildOffer(true, i * 10, RandomDescriptionGenerator.getDescriptionForOffer()));
         }
 
         ArrayList<Subscription> subscriptions = new ArrayList<>();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 1; i++) {
             subscriptions.add(buildSubscription(RandomDescriptionGenerator.getTypes(), RandomDescriptionGenerator.getDescriptionForSubscription(), offers));
         }
         card = new Card(subscriptions);
