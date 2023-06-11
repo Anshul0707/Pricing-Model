@@ -12,6 +12,7 @@ public class PricingModelApplication implements CommandLineRunner {
     public static void main(String[] args) {
         SpringApplication.run(PricingModelApplication.class, args);
     }
+
     @Override
     public void run(String... args) throws Exception {
         log.info("Application is started ...");
