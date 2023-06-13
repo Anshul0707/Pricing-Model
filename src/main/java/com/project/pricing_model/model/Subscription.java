@@ -6,6 +6,7 @@ import java.util.List;
 
 @Data
 public class Subscription {
+
     private String type;
     private String description;
     private List<Offer> offers;
