@@ -33,6 +33,7 @@ public class PricingServiceImpl implements PricingService {
             offers.add(buildOffer(true, i * 10, RandomDescriptionGenerator.getDescriptionForOffer()));
         }
 
+
         ArrayList<Subscription> subscriptions = new ArrayList<>();
         for (int i = 0; i < 1; i++) {
             subscriptions.add(buildSubscription(RandomDescriptionGenerator.getTypes(), RandomDescriptionGenerator.getDescriptionForSubscription(), offers));
