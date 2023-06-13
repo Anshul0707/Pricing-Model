@@ -17,6 +17,7 @@ public class PricingModelController {
 
     @GetMapping("/card")
     public Card getCard() {
+
         return pricingService.getCard();
     }
 }
